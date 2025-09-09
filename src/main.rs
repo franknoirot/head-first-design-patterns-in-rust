@@ -1,7 +1,14 @@
 mod strategy;
 use strategy::{Duck, FlyBehavior, QuackBehavior};
 
+
 fn main() {
+    println!("Strategy Pattern Demo:");
+    strategy_pattern_demo();
+}
+
+
+fn strategy_pattern_demo() {
     let mallard = Duck {
         fly_behavior: FlyBehavior::WithWings,
         quack_behavior: QuackBehavior::StandardQuack,
